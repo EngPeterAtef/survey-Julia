@@ -54,7 +54,7 @@ svydesign.default<-function(ids,probs=NULL,strata=NULL,variables=NULL, fpc=NULL,
         
     }
 
-    na.failsafe<-function(message="missing values in object"){
+    na.failsafe!<-function(message="missing values in object"){
       function(object,...){
         if (NCOL(object)==0)
           object

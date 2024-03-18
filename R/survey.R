@@ -331,7 +331,7 @@ print.summary.survey.design<-function(x,...){
   print(y,varnames=TRUE,design.summaries=TRUE,...)
 }	
      
-postStratify.survey.design<-function(design, strata, population, partial=FALSE,...){
+postStratify.survey.design!<-function(design, strata, population, partial=FALSE,...){
 
   if(inherits(strata,"formula")){
     mf<-substitute(model.frame(strata, data=design$variables,na.action=na.fail))

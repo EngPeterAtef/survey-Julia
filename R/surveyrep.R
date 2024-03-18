@@ -1842,7 +1842,7 @@ postStratify<-function(design,strata, population, partial=FALSE,...){
 
 
 
-postStratify.svyrep.design<-function(design, strata, population,
+postStratify.svyrep.design!<-function(design, strata, population,
                                      partial=FALSE,compress=NULL,...){
 
   if(inherits(strata,"formula")){
