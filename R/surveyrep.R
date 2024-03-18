@@ -1841,7 +1841,7 @@ postStratify<-function(design,strata, population, partial=FALSE,...){
 }
 
 
-
+# Append ! suffix to functions which mutate their arguments
 postStratify.svyrep.design!<-function(design, strata, population,
                                      partial=FALSE,compress=NULL,...){
 

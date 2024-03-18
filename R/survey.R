@@ -330,7 +330,8 @@ print.summary.survey.design<-function(x,...){
   class(y)<-"survey.design"
   print(y,varnames=TRUE,design.summaries=TRUE,...)
 }	
-     
+
+# Append ! suffix to functions which mutate their arguments
 postStratify.survey.design!<-function(design, strata, population, partial=FALSE,...){
 
   if(inherits(strata,"formula")){

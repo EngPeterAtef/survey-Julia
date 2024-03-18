@@ -15,8 +15,8 @@ detibble<-function(data) {
     else
         data
 }
-
-svydesign.default<-function(ids,probs=NULL,strata=NULL,variables=NULL, fpc=NULL,
+# Append ! suffix to functions which mutate their arguments
+svydesign.default!<-function(ids,probs=NULL,strata=NULL,variables=NULL, fpc=NULL,
                     data=NULL, nest=FALSE, check.strata=!nest,weights=NULL,pps=FALSE,
                             calibrate.formula=NULL,variance=c("HT","YG"), ...){
 
@@ -54,7 +54,7 @@ svydesign.default<-function(ids,probs=NULL,strata=NULL,variables=NULL, fpc=NULL,
         
     }
 
-    na.failsafe!<-function(message="missing values in object"){
+    na.failsafe<-function(message="missing values in object"){
       function(object,...){
         if (NCOL(object)==0)
           object
